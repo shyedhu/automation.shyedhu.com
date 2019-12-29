@@ -2,6 +2,7 @@
     <head>
         <title>Home Page</title>
         <script type="text/javscript">
+          var name='';
             function getParams(){
                 var idx = document.URL.indexOf('?');
                 var params = new Array();
@@ -16,7 +17,7 @@
             }
             params = getParams();
             uname = unescape(params["uname"]);
-     var name=uname;
+            name = uname;
     
         </script>
     </head>
@@ -25,6 +26,7 @@
 <h1>
       the value for number is:
       <script type="text/javascript">
+ 
         document.write(name)
       </script>
     </h1>
