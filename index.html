@@ -70,7 +70,9 @@ button:hover {
      width: 100%;
   }
 }
-<script>
+
+<body>
+  <script>
   function getFormData() {
     var userName = $("input[type=text][name=email]").val();
     // Do what you want with the data
@@ -78,7 +80,6 @@ button:hover {
     return true;
   }
 </script>
-<body>
   <form id="registration" name="registration" action="home.html" onsubmit="return getFormData();" method="POST">
   <div class="container">
     <h1>Sign Up</h1>
