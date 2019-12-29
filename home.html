@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Home Page</title>
-         <script>
+        <script type="text/javscript">
             function getParams(){
                 var idx = document.URL.indexOf('?');
                 var params = new Array();
@@ -16,10 +16,9 @@
             }
             params = getParams();
             uname = unescape(params["uname"]);
-             var username=uname;
-     
+       
              document.addEventListener('DOMContentLoaded', function() {
-   document.getElementByTagName("h1").innerHTML("the value for number is: " + username);
+   document.getElementByTagName("h1").innerHTML("the value for number is: " + uname);
 });
     
     
