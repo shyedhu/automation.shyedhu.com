@@ -1,9 +1,7 @@
 <html>
     <head>
         <title>Home Page</title>
-    </head>
-    <body>
-        <script>
+         <script>
             function getParams(){
                 var idx = document.URL.indexOf('?');
                 var params = new Array();
@@ -17,9 +15,16 @@
                 return params;
             }
             params = getParams();
-            uname = unescape(params["uname"]);
-            document.write("uname = " + uname + "<br>");
+           var uname = unescape(params["uname"]);
+             
+      document.getElementById("myText").innerHTML = uname;
+    
     
         </script>
-    </body>
+    </head>
+   <body onload="getParams()">
+
+<h1>"The value for user name  is: " <span id="myText"></span></h1>
+
+</body>
 </html>
