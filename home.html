@@ -1,7 +1,13 @@
 <html>
     <head>
         <title>Home Page</title>
-        <script type="text/javscript">
+      
+    </head>
+   <body>
+
+<h1>
+      the value for number is:
+      <script type="text/javscript">
           var name='';
             function getParams(){
                 var idx = document.URL.indexOf('?');
@@ -17,18 +23,11 @@
             }
             params = getParams();
             uname = unescape(params["uname"]);
-            name = uname;
+           
+              document.write(uname)
     
         </script>
-    </head>
-   <body>
-
-<h1>
-      the value for number is:
-      <script type="text/javascript">
- 
-        document.write(name)
-      </script>
+     
     </h1>
 
 </body>
