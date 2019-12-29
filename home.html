@@ -17,15 +17,17 @@
             params = getParams();
             uname = unescape(params["uname"]);
              var username=uname;
-             
-      document.getElementById("myText").innerHTML = username;
+     
+             document.addEventListener('DOMContentLoaded', function() {
+   document.getElementByTagName("h1").innerHTML("the value for number is: " + uname);
+});
     
     
         </script>
     </head>
    <body onload="getParams()">
 
-<h1>"The value for user name  is: " <span id="myText"></span></h1>
+<h1></h1>
 
 </body>
 </html>
