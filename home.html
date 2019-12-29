@@ -16,17 +16,18 @@
             }
             params = getParams();
             uname = unescape(params["uname"]);
-       
-             document.addEventListener('DOMContentLoaded', function() {
-   document.getElementByTagName("h1").innerHTML("the value for number is: " + uname);
-});
-    
+     var name=uname;
     
         </script>
     </head>
    <body>
 
-<h1></h1>
+<h1>
+      the value for number is:
+      <script type="text/javascript">
+        document.write(name)
+      </script>
+    </h1>
 
 </body>
 </html>
