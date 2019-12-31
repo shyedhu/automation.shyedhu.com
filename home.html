@@ -1,8 +1,21 @@
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
     <head>
         <title>Home Page</title>
     </head>
-    <body>
+    <body bgcolor="#E6E6FA">
+    <!-- Navigation -->
+<nav class="w3-bar w3-green">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+   <a href="#home" class="w3-button w3-bar-item">About</a>
+  <a href="#help" class="w3-button w3-bar-item">Help</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<h1  >
+
         <script>
             function getParams(){
                 var idx = document.URL.indexOf('?');
@@ -18,7 +31,9 @@
             }
             params = getParams();
             uname = unescape(params["uname"]);
-            document.write("Welcome: " + uname + "<br>");
+            document.write("Welcome: " + uname + " !<br>");
         </script>
+        </h1>
+        
     </body>
 </html>
