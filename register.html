@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login Page</title>
+	<title>Registration Page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -45,18 +45,20 @@
 						<span class="focus-input100"></span>
 					</div>
           
-          div class="wrap-input100 validate-input" data-validate = "Please repeat Password">
+                                         <div class="wrap-input100 validate-input" data-validate = "Please repeat Password">
 						<input class="input100" type="password" name="re-pass" placeholder="Repeat Password">
 						<span class="focus-input100"></span>
 					</div>
           
       
-       <div class="wrap-input100 validate-input" data-validate = "Please select Gender">
-        <input class="input100" type="radio" name="male" value="male"> Male
-        <input class="input100" type="radio" name="female" value="female"> Female
-         <span class="focus-input100"></span>
-      </div>
+				       <div>
+					      Please select Gender : 
+					<input class="input100" type="radio" name="male" value="male"> Male
+					<input class="input100" type="radio" name="female" value="female"> Female
+
+				      </div>
       <div>
+	       Please select Country : 
         <select name="countrylist" id="country">
         <option value="Australia">Australia</option>
           <option value="Canada">Canada</option>
@@ -72,9 +74,16 @@
 						</button>
 					</div>
 
-				 <div class="container signin">
-         <p>Already have an account? <a href="index.html">Sign in</a>.</p>
-        </div>
+					<div class="flex-col-c p-t-170 p-b-40">
+						<span class="txt1 p-b-9">
+							Already have an account?
+						</span>
+
+						<a href="index.html" class="txt3">
+							Sign in
+						</a>
+					</div>
+					
 				</form>
 			</div>
 		</div>
