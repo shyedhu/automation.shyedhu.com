@@ -32,42 +32,44 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="get" action="home.html">
 					<span class="login100-form-title">
-						Log In
+						Create Account
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
 						<input class="input100" type="text" name="uname" placeholder="Username">
 						<span class="focus-input100"></span>
-					</div>
+					</div> <br>
 
 					<div class="wrap-input100 validate-input" data-validate = "Please enter password">
 						<input class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
-					</div>
+					</div> <br>
           
-                                         <div class="wrap-input100 validate-input" data-validate = "Please repeat Password">
-						<input class="input100" type="password" name="re-pass" placeholder="Repeat Password">
+                                         <div class="wrap-input100 validate-input" data-validate = "Please re-enter Password">
+						<input class="input100" type="password" name="re-pass" placeholder="Re-enter Password">
 						<span class="focus-input100"></span>
-					</div>
+					</div> <br>
           
-      
+  
 				       <div>
-					      Please select Gender : 
-					<input class="input100" type="radio" name="male" value="male"> Male
-					<input class="input100" type="radio" name="female" value="female"> Female
+					    
+					       
+					<input type="radio" name="gender" id="male" value="male"> Male
+					<input type="radio" name="gender" id="female" value="female"> Female
 
-				      </div>
-      <div>
-	       Please select Country : 
-        <select name="countrylist" id="country">
-        <option value="Australia">Australia</option>
-          <option value="Canada">Canada</option>
-        <option value="China">China</option>
-        <option value="India">India</option>
-        <option value="Japan">Japan</option>
-        <option value="USA">USA</option>
-        </select>
-      </div>
+				      </div>  <br>
+				      <div>
+
+					<select name="countrylist" id="country">
+					<option value="">Select Country</option>
+					<option value="Australia">Australia</option>
+					  <option value="Canada">Canada</option>
+					<option value="China">China</option>
+					<option value="India">India</option>
+					<option value="Japan">Japan</option>
+					<option value="USA">USA</option>
+					</select>
+				      </div>  <br>
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" name="register">
 							Register
